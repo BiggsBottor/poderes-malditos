@@ -1,12 +1,283 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="module" src="scripts/script.js" defer></script>
 </head>
 <body>
+  <header class="header">
+    Formulario
+  </header>
+  <section class="form--container">
+    <form class="form">
+      <div class="form--question" data-question="1" data-name="gender">
+        <p class="form--question-text"><bold>1.</bold> Indique su género</p>
+        <ul class="form--field">
+          <li class="form--field__option">
+            <label for="gender-1">Hombre</label>
+            <input type="radio" name="gender" id="gender-1" value="1-a" required>
+          </li>
+          <li class="form--field__option">
+            <label for="gender-2">Mujer</label>
+            <input type="radio" name="gender" id="gender-2" value="1-b" required>
+          </li>
+          <li class="form--field__option">
+            <label for="gender-3">NS/NC/Otros</label>
+            <input type="radio" name="gender" id="gender-3" value="1-c" required>
+          </li>
+        </ul>
+      </div>
+      <div class="form--question" data-question="2" data-name="age">
+        <p class="form--question-text"><bold>2.</bold> ¿Cuántos años tiene?</p>
+        <ul class="form--field">
+          <li class="form--field__option">
+            <label for="age-1">Niño (0 - 10)</label>
+            <input type="radio" name="age" id="age-1" value="2-a" required>
+          </li>
+          <li class="form--field__option">
+            <label for="age-2">Adolescente (11 - 20)</label>
+            <input type="radio" name="age" id="age-2" value="2-b" required>
+          </li>
+          <li class="form--field__option">
+            <label for="age-3">Joven (21 - 35)</label>
+            <input type="radio" name="age" id="age-3" value="2-c" required>
+          </li>
+          <li class="form--field__option">
+            <label for="age-4">Adulto (36 - 60)</label>
+            <input type="radio" name="age" id="age-4" value="2-d" required>
+          </li>
+          <li class="form--field__option">
+            <label for="age-5">Anciano (60 o más)</label>
+            <input type="radio" name="age" id="age-5" value="2-e" required>
+          </li>
+        </ul>
+      </div>
+      <div class="form--question" data-question="3" data-name="value">
+        <p class="form--question-text"><bold>3.</bold> ¿Cuál es su valor más preciado</p>
+        <ul class="form--field">
+          <li class="form--field__option">
+            <label for="value-1">Objeto</label>
+            <input type="radio" name="value" id="value-1" value="3-a" required>
+          </li>
+          <li class="form--field__option">
+            <label for="value-2">Persona</label>
+            <input type="radio" name="value" id="value-2" value="3-b" required>
+          </li>
+          <li class="form--field__option">
+            <label for="value-3">Valor</label>
+            <input type="radio" name="value" id="value-3" value="3-c" required>
+          </li>
+          <li class="form--field__option">
+            <label for="value-4">Religión</label>
+            <input type="radio" name="value" id="value-4" value="3-d" required>
+          </li>
+          <li class="form--field__option">
+            <label for="value-5">Organización</label>
+            <input type="radio" name="value" id="value-5" value="3-e" required>
+          </li>
+        </ul>
+      </div>
+      <div class="form--question" data-question="4" data-name="hitler">
+        <p class="form--question-text"><bold>4.</bold> Si pudiera viajar al pasado y matar a Hitler, ¿lo haría?</p>
+        <ul class="form--field">
+          <li class="form--field__option">
+            <label for="hitler-1">Si</label>
+            <input type="radio" name="hitler" id="hitler-1" value="4-a" required>
+          </li>
+          <li class="form--field__option">
+            <label for="hitler-2">No</label>
+            <input type="radio" name="hitler" id="hitler-2" value="4-b" required>
+          </li>
+        </ul>
+      </div>
+      <div class="form--question" data-question="5" data-name="noble">
+        <p class="form--question-text"><bold>5.</bold> ¿Daría su vida por una cause noble?</p>
+        <ul class="form--field">
+          <li class="form--field__option">
+            <label for="noble-1">Si</label>
+            <input type="radio" name="noble" id="noble-1" value="5-a" required>
+          </li>
+          <li class="form--field__option">
+            <label for="noble-2">No</label>
+            <input type="radio" name="noble" id="noble-2" value="5-b" required>
+          </li>
+        </ul>
+      </div>
+      <div class="form--question" data-question="6" data-name="color">
+        <p class="form--question-text"><bold>6.</bold> ¿Cuál es su color favorito?</p>
+        <ul class="form--field">
+          <li class="form--field__option">
+            <label for="color-1">Blanco</label>
+            <input type="radio" name="color" id="color-1" value="6-a"required>
+          </li>
+          <li class="form--field__option">
+            <label for="color-2">Rojo</label>
+            <input type="radio" name="color" id="color-2" value="6-b" required>
+          </li>
+          <li class="form--field__option">
+            <label for="color-3">Verde</label>
+            <input type="radio" name="color" id="color-3" value="6-c" required>
+          </li>
+          <li class="form--field__option">
+            <label for="color-4">Amarillo</label>
+            <input type="radio" name="color" id="color-4" value="6-d" required>
+          </li>
+          <li class="form--field__option">
+            <label for="color-5">Azul</label>
+            <input type="radio" name="color" id="color-5" value="6-e" required>
+          </li>
+        </ul>
+      </div>
+      <div class="form--question" data-question="7" data-name="animal">
+        <p class="form--question-text"><bold>7.</bold> ¿Con cuál de los siguientes animales se siente más identificado?</p>
+        <ul class="form--field">
+          <li class="form--field__option">
+            <label for="animal-1">León</label>
+            <input type="radio" name="animal" id="animal-1" value="7-a" required>
+          </li>
+          <li class="form--field__option">
+            <label for="animal-2">Elefante</label>
+            <input type="radio" name="animal" id="animal-2" value="7-b" required>
+          </li>
+          <li class="form--field__option">
+            <label for="animal-3">Perro</label>
+            <input type="radio" name="animal" id="animal-3" value="7-c" required>
+          </li>
+          <li class="form--field__option">
+            <label for="animal-4">Águila</label>
+            <input type="radio" name="animal" id="animal-4" value="7-d" required>
+          </li>
+          <li class="form--field__option">
+            <label for="animal-5">Pez</label>
+            <input type="radio" name="animal" id="animal-5" value="7-e" required>
+          </li>
+        </ul>
+      </div>
+      <div class="form--question" data-question="8" data-name="childhood">
+        <p class="form--question-text"><bold>8.</bold> ¿Cómo definiría su infancia?</p>
+        <ul class="form--field">
+          <li class="form--field__option">
+            <label for="childhood-1">Feliz</label>
+            <input type="radio" name="childhood" id="childhood-1" value="8-a" required>
+          </li>
+          <li class="form--field__option">
+            <label for="childhood-2">Normal</label>
+            <input type="radio" name="childhood" id="childhood-2" value="8-b" required>
+          </li>
+          <li class="form--field__option">
+            <label for="childhood-3">Desgraciada</label>
+            <input type="radio" name="childhood" id="childhood-3" value="8-c" required>
+          </li>
+          <li class="form--field__option">
+            <label for="childhood-4">Traumática</label>
+            <input type="radio" name="childhood" id="childhood-4" value="8-d" required>
+          </li>
+        </ul>
+      </div>
+      <div class="form--question" data-question="9" data-name="squadron">
+        <p class="form--question-text"><bold>9.</bold> ¿Por qué se ha unido al Escuadrón Maldito?</p>
+        <ul class="form--field">
+          <li class="form--field__option">
+            <label for="squadron-1">Heroísmo</label>
+            <input type="radio" name="squadron" id="squadron-1" value="9-a" required>
+          </li>
+          <li class="form--field__option">
+            <label for="squadron-2">Obligado</label>
+            <input type="radio" name="squadron" id="squadron-2" value="9-b" required>
+          </li>
+          <li class="form--field__option">
+            <label for="squadron-3">Conveniencia</label>
+            <input type="radio" name="squadron" id="squadron-3" value="9-c" required>
+          </li>
+          <li class="form--field__option">
+            <label for="squadron-4">Esperanza</label>
+            <input type="radio" name="squadron" id="squadron-4" value="9-d" required>
+          </li>
+          <li class="form--field__option">
+            <label for="squadron-5">Venganza</label>
+            <input type="radio" name="squadron" id="squadron-5" value="9-e" required>
+          </li>
+        </ul>
+      </div>
+      <div class="form--question" data-question="10" data-name="profesor">
+        <p class="form--question-text"><bold>10.</bold> ¿Qué opina del profesor Klosseheimmer?</p>
+        <ul class="form--field">
+          <li class="form--field__option">
+            <label for="profesor-1">Le admiro</label>
+            <input type="radio" name="profesor" id="profesor-1" value="10-a" required>
+          </li>
+          <li class="form--field__option">
+            <label for="profesor-2">Me cae bien</label>
+            <input type="radio" name="profesor" id="profesor-2" value="10-b" required>
+          </li>
+          <li class="form--field__option">
+            <label for="profesor-3">Me cae mal</label>
+            <input type="radio" name="profesor" id="profesor-3" value="10-c" required>
+          </li>
+          <li class="form--field__option">
+            <label for="profesor-4">Religión</label>
+            <input type="radio" name="profesor" id="profesor-4" value="10-d" required>
+          </li>
+          <li class="form--field__option">
+            <label for="profesor-5">Le odio con todas mis fuerzas</label>
+            <input type="radio" name="profesor" id="profesor-5" value="10-e" required>
+          </li>
+        </ul>
+      </div>
+      <br/>
+      <h3>Sección Psicotécnica</h3>
+      <div class="form--question" data-question="11" data-name="words">
+        <p class="form--question-text"><bold>11.</bold> La palabra "<i>camión</i>" es a "<i>guisante</i>" como "<i>hidra</i>" a...</p>
+        <ul class="form--field">
+          <li class="form--field__option">
+            <label for="words-1">Matemáticas</label>
+            <input type="radio" name="words" id="words-1" value="11-a" required>
+          </li>
+          <li class="form--field__option">
+            <label for="words-2">Frío</label>
+            <input type="radio" name="words" id="words-2" value="11-b" required>
+          </li>
+          <li class="form--field__option">
+            <label for="words-3">Cobre</label>
+            <input type="radio" name="words" id="words-3" value="11-c" required>
+          </li>
+        </ul>
+      </div>
+      <div class="form--question" data-question="12" data-name="logic">
+        <p class="form--question-text"><bold>12.</bold> Siga la secuencia lógica: <i>barra, círculo, cubo, rombo...</i></p>
+        <ul class="form--field">
+          <li class="form--field__option">
+            <label for="logic-1">París</label>
+            <input type="radio" name="logic" id="logic-1" value="12-a" required>
+          </li>
+          <li class="form--field__option">
+            <label for="logic-2">Ballena</label>
+            <input type="radio" name="logic" id="logic-2" value="12-b" required>
+          </li>
+          <li class="form--field__option">
+            <label for="logic-3">Púrpura</label>
+            <input type="radio" name="logic" id="logic-3" value="12-c" required>
+          </li>
+          <li class="form--field__option">
+            <label for="logic-4">Nieve</label>
+            <input type="radio" name="logic" id="logic-4" value="12-d" required>
+          </li>
+        </ul>
+      </div>
+      <div class="form--question" data-question="13" data-name="phrase">
+        <p class="form--question-text"><bold>13.</bold> Escriba la primera frase que se le ocurra</p>
+        <div class="form--field">
+          <textarea name="phrase" id="phrase-1" required></textarea>
+        </div>
+      </div>
+      <div class="form--field">
+        <button type="submit">Validar formulario</button>
+      </div>
+    </form>
+  </section>
 </body>
 </html>
