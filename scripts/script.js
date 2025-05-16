@@ -109,6 +109,7 @@ const Traits = {
   miedo: 2
 };
 let powerIndex = 0;
+console.log('%cTraits on load', 'color:orange', {Traits});
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
