@@ -101,11 +101,11 @@ const PowerOptions = [
 
 const form = document.querySelector('.form');
 const Traits = {
-  pena: 0,
-  amor: 0,
-  orgullo: 0,
-  ira: 0,
-  miedo: 0
+  pena: 2,
+  amor: 2,
+  orgullo: 2,
+  ira: 2,
+  miedo: 2
 };
 let powerIndex = 0;
 
