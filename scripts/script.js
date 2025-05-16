@@ -99,8 +99,40 @@ const PowerOptions = [
   { a: 'Portador', b: 'Superpoder Viviente' }
 ];
 
+function showResults() {
+  const header = document.querySelector('.header');
+  const formContainer = document.querySelector('.form--container');
+  const listPowerIndex = powerIndex - 1;
+  const resultFragment = document.createRange().createContextualFragment(`
+    <div class="result">
+      <div class="result__header">
+        <h2 class="result__title">Lista de atributos</h2>
+        <ul class="result__traits-container">
+          <li class="result__trait">Pena: ${Traits.pena}</li>
+          <li class="result__trait">Amor: ${Traits.amor}</li>
+          <li class="result__trait">Orgullo: ${Traits.orgullo}</li>
+          <li class="result__trait">Ira: ${Traits.ira}</li>
+          <li class="result__trait">Miedo: ${Traits.miedo}</li>
+        </ul>
+      </div>
+      <div class="result__header">
+        <h2 class="result__title">Poderes</h2>
+        <ul class="result__powers-container">
+          <li class="result__power-number">${powerIndex}</li>
+          <li class="result__power">${PowerOptions[listPowerIndex].a}</li>
+          <li class="result__power">${PowerOptions[listPowerIndex].b}</li>
+        </ul>
+      </div>
+    </div>
+  `);
+
+  header.textContent = 'Resultados';
+  formContainer.className = 'results-container';
+  formContainer.replaceWith(resultFragment);
+}
+
 const form = document.querySelector('.form');
-// set the minimum amount of attributes
+// set the minimum amount of attributes being 2 the minimum
 const Traits = {
   pena: 2,
   amor: 2,
@@ -119,17 +151,21 @@ form.addEventListener('submit', (e) => {
   const attributes = checkedInputsValues.slice(0, -2);
   const powers = checkedInputsValues.splice(-2);
 
+  // adds the proper attribute in the Traits object based in the result one
   attributes.forEach((attribute) => {
     const [question, option] = attribute.split('-');
     const trait = result[question][option];
     Traits[trait] += 2;
   });
+
+  // add the power index based on the last 3 questions
   powers.forEach((power) => {
     const [question, option] = power.split('-');
     const powerValue = result[question][option];
     powerIndex += powerValue;
   });
-  const phraseCount = phraseText.trim().split(/\s+/).length;
-  powerIndex += phraseCount > 5 ? 12 : 0;
-  console.log({Traits, powerIndex, phraseCount});
+
+  // add to the power index the amount of words used in the text area being 12+ if there are 6+ words
+  powerIndex += phraseText.trim().split(/\s+/).length > 5 ? 12 : 0;
+  showResults()
 });
