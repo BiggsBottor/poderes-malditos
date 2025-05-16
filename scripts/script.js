@@ -100,6 +100,7 @@ const PowerOptions = [
 ];
 
 const form = document.querySelector('.form');
+// set the minimum amount of attributes
 const Traits = {
   pena: 2,
   amor: 2,
