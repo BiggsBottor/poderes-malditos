@@ -57,8 +57,7 @@ const result = {
     "a":"amor",
     "b":"pena",
     "c":"miedo",
-    "d":"orgullo",
-    "e":"ira"
+    "d":"ira"
   },
   "11": {
     "a":1,
