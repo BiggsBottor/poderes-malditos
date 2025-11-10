@@ -73,29 +73,30 @@ const result = {
 };
 
 const PowerOptions = [
-  { a: 'Barítono', b: "Artesano" },
-  { a: 'Ilusionista', b: "Hombre Invisible" },
-  { a: 'Manipulador', b: "Transmisor Emocional" },
-  { a: 'Telépata', b: "Hipnotizador" },
-  { a: 'Telequinésico', b: "Lector de Objetos" },
-  { a: 'Urbanita', b: 'Salvaje' },
-  { a: 'Entomólogo', b: 'Hombre de Sangre Fría' },
-  { a: 'Tritón', b: 'Hombre Halcón' },
-  { a: 'Metamorfo', b: 'Mímico' },
-  { a: 'Clonador', b: 'Poseedor' },
-  { a: 'Regenerador', b: 'Remendado' },
-  { a: 'Termoquinético', b: 'Brujo Climático' },
-  { a: 'Velocista', b: 'Reloj Humano' },
-  { a: 'Cronauta', b: 'Teletransportador' },
-  { a: 'Hombre Menguante', b: 'Gravitacional' },
-  { a: 'Agujero Negro', b: 'Sanguijuela' },
-  { a: 'Ser Negativo', b: 'Elemental' },
-  { a: 'Espectro', b: 'Proyector Astral' },
-  { a: 'Vampiro', b: 'Hombre Lobo' },
-  { a: 'Satanista', b: 'Chamán' },
-  { a: 'Matemático', b: 'Lingüista' },
-  { a: 'Ciborg', b: 'Golem' },
-  { a: 'Portador', b: 'Superpoder Viviente' }
+  { a: 'Barítono', b: "Artesano" }, // 1
+  { a: 'Ilusionista', b: "Hombre Invisible" }, // 2
+  { a: 'Manipulador', b: "Transmisor Emocional" }, // 3
+  { a: 'Telépata', b: "Hipnotizador" }, // 4
+  { a: 'Telequinésico', b: "Lector de Objetos" }, // 5
+  { a: 'Urbanita', b: 'Salvaje' }, // 6
+  { a: 'Entomólogo', b: 'Hombre de Sangre Fría' }, // 7
+  { a: 'Tritón', b: 'Hombre Halcón' }, // 8
+  { a: 'Metamorfo', b: 'Mímico' }, // 9
+  { a: 'Clonador', b: 'Poseedor' }, // 10
+  { a: 'Regenerador', b: 'Remendado' }, // 11
+  { a: 'Termoquinético', b: 'Brujo Climático' }, // 12
+  { a: 'Velocista', b: 'Reloj Humano' }, // 13
+  { a: 'Cronauta', b: 'Teletransportador' }, // 14
+  { a: 'Hombre Menguante', b: 'Gravitacional' }, // 15
+  { a: 'Agujero Negro', b: 'Sanguijuela' }, // 16
+  { a: 'Ser Negativo', b: 'Elemental' }, // 17
+  { a: 'Espectro', b: 'Proyector Astral' }, // 18
+  { a: 'Vampiro', b: 'Hombre Lobo' }, // 19
+  { a: 'Satanista', b: 'Chamán' }, // 20
+  { a: 'Matemático', b: 'Sinestésico' }, // 21
+  { a: 'Mecamigo', b: 'Lingüista' }, // 22
+  { a: 'Ciborg', b: 'Golem' }, // 23
+  { a: 'Portador', b: 'Superpoder Viviente' } // 24
 ];
 
 function showResults() {
